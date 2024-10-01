@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Con linearlayout podemos modificar el body dem la app, por lo que le meto la paya de fondo de pantalla -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/playa"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <!-- Dado que hay fondo de pantalla n ose veia bien las cajas de text o por lo que les meti fondo blanco y letras negra -->
+   <!-- android:text="Operando 1"
+    android:textColor="#000000" -->
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101"
+        app:srcCompat="@drawable/logo_calculadora" />
+
+    <EditText
+        android:id="@+id/operando1"
+        android:layout_width="164dp"
+        android:layout_height="51dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="Operando 1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <EditText
+        android:id="@+id/operando2"
+        android:layout_width="167dp"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="Operando 2"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.446" />
+
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="276dp"
+        android:layout_height="36dp"
+        android:background="@android:color/white"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <ImageButton
+        android:id="@+id/img_suma"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/suma_pulsar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <ImageButton
+        android:id="@+id/img_division"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dividir_pulsar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ImageButton
+        android:id="@+id/img_multiplicacion"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/multi_pulsar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <ImageButton
+        android:id="@+id/img_resta"
+        android:layout_width="61dp"
+        android:layout_height="43dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/resta_pulsar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
+
+    <TextView
+        android:id="@+id/historial"
+        android:layout_width="240dp"
+        android:layout_height="234dp"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:text="Historial de operaciones:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"/>
+
+    <ImageButton
+        android:id="@+id/img_borrar"
+        android:layout_width="69dp"
+        android:layout_height="74dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/borrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
