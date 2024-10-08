@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 realizarOperacion(op1, op2, r, historial, "/");
             }
         });
+        
 
         rest.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
