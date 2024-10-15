@@ -108,10 +108,12 @@
             android:textSize="24sp"/>
 
         <RadioGroup
+            android:id="@+id/radioGroupSex"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:orientation="horizontal">
+
             <RadioButton
                 android:id="@+id/radioButton"
                 android:layout_width="0dp"
@@ -119,14 +121,16 @@
                 android:layout_weight="1"
                 android:text="Hombre"
                 android:textSize="24sp" />
+
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Mujer"
-                android:textSize="24sp"/>
+                android:textSize="24sp" />
         </RadioGroup>
+
     </LinearLayout>
 
     <TextView
@@ -198,7 +202,7 @@
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/botonEnviar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/enviar"
