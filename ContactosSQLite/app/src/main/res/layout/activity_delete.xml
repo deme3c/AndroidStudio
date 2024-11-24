@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Introduce el ID"
+        android:textSize="24dp"
+        android:layout_marginBottom="15dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID del Contacto"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borrar Contacto"
+        android:onClick="deleteClient"/>
+</LinearLayout>

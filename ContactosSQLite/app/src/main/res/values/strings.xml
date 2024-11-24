@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BBDDFer</string>
+
+    <string-array name="color_options">
+        <item>Selecciona un fondo</item>
+        <item>Blanco</item>
+        <item>Azul Claro</item>
+        <item>Verde Claro</item>
+    </string-array>
+
+</resources>

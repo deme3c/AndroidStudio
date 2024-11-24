@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BBDD de Contactos"
+        android:textSize="24dp"
+        android:textAlignment="center"
+
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar Contacto"
+        android:textSize="24dp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borrar Contacto"
+        android:textSize="24dp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Buscar Contacto"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnListado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Listado Contactos"
+        android:layout_marginBottom="12dp"/>
+
+
+    <Spinner
+        android:id="@+id/colorSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/color_options" />
+
+</LinearLayout>

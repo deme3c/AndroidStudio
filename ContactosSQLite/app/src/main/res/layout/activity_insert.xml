@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos del nuevo Contacto"
+        android:textSize="24dp"
+        android:layout_marginBottom="15dp"
+        android:textAlignment="center"/>
+
+    
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Contacto"
+        android:textSize="28dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etMovil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Movil del Contacto"
+        android:textSize="28dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email del Contacto"
+        android:textSize="28dp"
+        android:layout_marginBottom="15dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar Contacto"
+        android:textSize="24dp"
+        android:onClick="insertClient"/>
+
+</LinearLayout>
